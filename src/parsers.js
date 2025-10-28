@@ -1,41 +1,32 @@
 const fs = require('fs');
 const path = require('path');
+const yaml = require('js-yaml');
 
-/**
- * Возвращает абсолютный путь для файла.
- */
+// Абсолютный путь
 const getAbsolutePath = (filepath) => (
   path.isAbsolute(filepath) ? filepath : path.resolve(process.cwd(), filepath)
 );
 
-/**
- * Определяет тип данных по расширению файла.
- */
-const getFormatByExt = (filepath) => {
-  const ext = path.extname(filepath).toLowerCase().replace('.', '');
-  return ext; // 'json', позже добавим 'yml' / 'yaml'
-};
+// Определяем формат по расширению
+const getFormatByExt = (filepath) => path.extname(filepath).toLowerCase().replace('.', '');
 
-/**
- * Синхронно читает файл как текст.
- */
+// Читаем файл синхронно
 const readFile = (absolutePath) => fs.readFileSync(absolutePath, 'utf-8');
 
-/**
- * Парсит строку в зависимости от формата.
- */
+// Парсим содержимое по формату
 const parse = (content, format) => {
   switch (format) {
     case 'json':
       return JSON.parse(content);
+    case 'yml':
+    case 'yaml':
+      return yaml.load(content);
     default:
       throw new Error(`Unsupported format: ${format}`);
   }
 };
 
-/**
- * Комплексная функция: по пути читает и парсит данные.
- */
+// Комплексная: прочитать и распарсить
 const loadData = (filepath) => {
   const absolutePath = getAbsolutePath(filepath);
   const format = getFormatByExt(absolutePath);

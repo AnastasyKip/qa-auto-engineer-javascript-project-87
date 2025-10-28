@@ -1,4 +1,4 @@
-const { loadData } = require('./parsers');
+const { loadData } = require('./parsers.js');
 
 const formatValue = (v) => {
   if (typeof v === 'string') return v;

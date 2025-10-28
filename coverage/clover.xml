@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1761668011831" clover="3.2.0">
-  <project timestamp="1761668011831" name="All files">
-    <metrics statements="41" coveredstatements="40" conditionals="14" coveredconditionals="12" methods="9" coveredmethods="9" elements="64" coveredelements="61" complexity="0" loc="41" ncloc="41" packages="1" files="2" classes="2"/>
+<coverage generated="1761672062225" clover="3.2.0">
+  <project timestamp="1761672062225" name="All files">
+    <metrics statements="41" coveredstatements="40" conditionals="16" coveredconditionals="14" methods="9" coveredmethods="9" elements="66" coveredelements="63" complexity="0" loc="41" ncloc="41" packages="1" files="2" classes="2"/>
     <file name="index.js" path="/Users/nastak/qa-auto-engineer-javascript-project-87/src/index.js">
       <metrics statements="23" coveredstatements="23" conditionals="10" coveredconditionals="10" methods="4" coveredmethods="4"/>
       <line num="1" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
-      <line num="4" count="6" type="cond" truecount="2" falsecount="0"/>
-      <line num="5" count="4" type="stmt"/>
-      <line num="10" count="1" type="stmt"/>
-      <line num="13" count="1" type="stmt"/>
-      <line num="15" count="1" type="stmt"/>
-      <line num="16" count="5" type="stmt"/>
-      <line num="17" count="5" type="stmt"/>
-      <line num="19" count="5" type="cond" truecount="4" falsecount="0"/>
-      <line num="20" count="2" type="stmt"/>
-      <line num="21" count="2" type="stmt"/>
-      <line num="23" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="25" count="1" type="stmt"/>
-      <line num="28" count="1" type="stmt"/>
-      <line num="34" count="3" type="cond" truecount="2" falsecount="0"/>
-      <line num="36" count="2" type="stmt"/>
-      <line num="40" count="1" type="stmt"/>
-      <line num="43" count="1" type="stmt"/>
-      <line num="48" count="1" type="stmt"/>
-      <line num="49" count="1" type="stmt"/>
-      <line num="50" count="1" type="stmt"/>
+      <line num="4" count="12" type="cond" truecount="2" falsecount="0"/>
+      <line num="5" count="8" type="stmt"/>
+      <line num="10" count="2" type="stmt"/>
+      <line num="13" count="2" type="stmt"/>
+      <line num="15" count="2" type="stmt"/>
+      <line num="16" count="10" type="stmt"/>
+      <line num="17" count="10" type="stmt"/>
+      <line num="19" count="10" type="cond" truecount="4" falsecount="0"/>
+      <line num="20" count="4" type="stmt"/>
+      <line num="21" count="4" type="stmt"/>
+      <line num="23" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="25" count="2" type="stmt"/>
+      <line num="28" count="2" type="stmt"/>
+      <line num="34" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="36" count="4" type="stmt"/>
+      <line num="40" count="2" type="stmt"/>
+      <line num="43" count="2" type="stmt"/>
+      <line num="48" count="2" type="stmt"/>
+      <line num="49" count="2" type="stmt"/>
+      <line num="50" count="2" type="stmt"/>
       <line num="53" count="1" type="stmt"/>
     </file>
     <file name="parsers.js" path="/Users/nastak/qa-auto-engineer-javascript-project-87/src/parsers.js">
-      <metrics statements="18" coveredstatements="17" conditionals="4" coveredconditionals="2" methods="5" coveredmethods="5"/>
+      <metrics statements="18" coveredstatements="17" conditionals="6" coveredconditionals="4" methods="5" coveredmethods="5"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
-      <line num="7" count="1" type="stmt"/>
-      <line num="8" count="2" type="cond" truecount="1" falsecount="1"/>
-      <line num="14" count="1" type="stmt"/>
-      <line num="15" count="2" type="stmt"/>
-      <line num="16" count="2" type="stmt"/>
-      <line num="22" count="2" type="stmt"/>
-      <line num="27" count="1" type="stmt"/>
-      <line num="28" count="2" type="cond" truecount="1" falsecount="1"/>
-      <line num="30" count="2" type="stmt"/>
-      <line num="32" count="0" type="stmt"/>
-      <line num="39" count="1" type="stmt"/>
-      <line num="40" count="2" type="stmt"/>
-      <line num="41" count="2" type="stmt"/>
-      <line num="42" count="2" type="stmt"/>
-      <line num="43" count="2" type="stmt"/>
-      <line num="46" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="4" type="cond" truecount="1" falsecount="1"/>
+      <line num="11" count="4" type="stmt"/>
+      <line num="14" count="4" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="18" count="4" type="cond" truecount="3" falsecount="1"/>
+      <line num="20" count="2" type="stmt"/>
+      <line num="23" count="2" type="stmt"/>
+      <line num="25" count="0" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="31" count="4" type="stmt"/>
+      <line num="32" count="4" type="stmt"/>
+      <line num="33" count="4" type="stmt"/>
+      <line num="34" count="4" type="stmt"/>
+      <line num="37" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
