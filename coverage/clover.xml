@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1761665834640" clover="3.2.0">
-  <project timestamp="1761665834640" name="All files">
+<coverage generated="1761668011831" clover="3.2.0">
+  <project timestamp="1761668011831" name="All files">
     <metrics statements="41" coveredstatements="40" conditionals="14" coveredconditionals="12" methods="9" coveredmethods="9" elements="64" coveredelements="61" complexity="0" loc="41" ncloc="41" packages="1" files="2" classes="2"/>
     <file name="index.js" path="/Users/nastak/qa-auto-engineer-javascript-project-87/src/index.js">
       <metrics statements="23" coveredstatements="23" conditionals="10" coveredconditionals="10" methods="4" coveredmethods="4"/>

@@ -25,5 +25,23 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Test
+      - name: Test (with coverage)
         run: npm test -- --coverage
+
+      # SonarCloud
+      - name: Setup Java for Sonar
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        # Опционально можно явно передать key/org, но обычно хватает sonar-project.properties:
+        # with:
+        #   args: >
+        #     -Dsonar.projectKey=<projectKey>
+        #     -Dsonar.organization=<organization>
