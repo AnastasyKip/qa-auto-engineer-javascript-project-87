@@ -1,0 +1,23 @@
+{
+  "name": "@hexlet/code",
+  "version": "0.0.1",
+  "description": "CLI утилита gendiff: сравнение конфигурационных файлов",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "bin": {
+    "gendiff": "./bin/gendiff.js"
+  },
+  "scripts": {
+    "gendiff": "node bin/gendiff.js",
+    "help": "node bin/gendiff.js -h"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "commander": "^14.0.2"
+  }
+}
