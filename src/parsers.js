@@ -22,7 +22,7 @@ const parse = (content, format) => {
   }
 }
 
-const loadData = filepath => {
+const loadData = (filepath) => {
   const absolutePath = getAbsolutePath(filepath)
   const format = getFormatByExt(absolutePath)
   const content = readFile(absolutePath)
