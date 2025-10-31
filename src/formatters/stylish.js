@@ -1,8 +1,8 @@
-const formatValue = (v) => (typeof v === 'string' ? v : String(v));
+const formatValue = v => (typeof v === 'string' ? v : String(v));
 
-const stylish = (nodes) => {
+const stylish = nodes => {
   const indent = '  ';
-  const lines = nodes.flatMap((node) => {
+  const lines = nodes.flatMap(node => {
     const { key, type } = node;
 
     switch (type) {
@@ -12,10 +12,10 @@ const stylish = (nodes) => {
         return `${indent}- ${key}: ${formatValue(node.value)}`;
       case 'added':
         return `${indent}+ ${key}: ${formatValue(node.value)}`;
-      case 'updated':
+      case 'changed':
         return [
           `${indent}- ${key}: ${formatValue(node.oldValue)}`,
-          `${indent}+ ${key}: ${formatValue(node.newValue)}`,
+          `${indent}+ ${key}: ${formatValue(node.newValue)}`
         ];
       default:
         throw new Error(`Unknown node type: ${type}`);
