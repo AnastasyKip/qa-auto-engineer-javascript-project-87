@@ -10,3 +10,4 @@ function genDiff(filepath1, filepath2, outFormat = 'stylish') {
 }
 
 module.exports = genDiff;
+module.exports.default = genDiff; // ESM compatibility for import syntax

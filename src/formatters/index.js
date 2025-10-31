@@ -15,5 +15,4 @@ const format = (nodes, name = 'stylish') => {
   }
 };
 
-module.exports = genDiff;
-module.exports.default = genDiff; // ESM default interop for import genDiff from '@hexlet/code'
+module.exports = format;
