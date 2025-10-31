@@ -1,38 +1,33 @@
-const fs = require('fs');
-const path = require('path');
-const yaml = require('js-yaml');
+const fs = require('fs')
+const path = require('path')
+const yaml = require('js-yaml')
 
-// Абсолютный путь
-const getAbsolutePath = (filepath) => (
-  path.isAbsolute(filepath) ? filepath : path.resolve(process.cwd(), filepath)
-);
+const getAbsolutePath = (filepath) =>
+  (path.isAbsolute(filepath) ? filepath : path.resolve(process.cwd(), filepath))
 
-// Определяем формат по расширению
-const getFormatByExt = (filepath) => path.extname(filepath).toLowerCase().replace('.', '');
+const getFormatByExt = (filepath) =>
+  path.extname(filepath).toLowerCase().replace('.', '')
 
-// Читаем файл синхронно
-const readFile = (absolutePath) => fs.readFileSync(absolutePath, 'utf-8');
+const readFile = absolutePath => fs.readFileSync(absolutePath, 'utf-8')
 
-// Парсим содержимое по формату
 const parse = (content, format) => {
   switch (format) {
     case 'json':
-      return JSON.parse(content);
+      return JSON.parse(content)
     case 'yml':
     case 'yaml':
-      return yaml.load(content);
+      return yaml.load(content)
     default:
-      throw new Error(`Unsupported format: ${format}`);
+      throw new Error(`Unsupported format: ${format}`)
   }
-};
+}
 
-// Комплексная: прочитать и распарсить
 const loadData = (filepath) => {
-  const absolutePath = getAbsolutePath(filepath);
-  const format = getFormatByExt(absolutePath);
-  const content = readFile(absolutePath);
-  return parse(content, format);
-};
+  const absolutePath = getAbsolutePath(filepath)
+  const format = getFormatByExt(absolutePath)
+  const content = readFile(absolutePath)
+  return parse(content, format)
+}
 
 module.exports = {
   getAbsolutePath,
@@ -40,4 +35,4 @@ module.exports = {
   readFile,
   parse,
   loadData,
-};
+}
