@@ -1,5 +1,6 @@
 const buildDiff = (obj1, obj2) => {
-    const keys = Array.from(new Set([...Object.keys(obj1), ...Object.keys(obj2)])).sort();
+  const keys = Array.from(new Set([...Object.keys(obj1), ...Object.keys(obj2)]))
+  .sort((a, b) => a.localeCompare(b));
   
     return keys.map((key) => {
       const in1 = Object.prototype.hasOwnProperty.call(obj1, key);
