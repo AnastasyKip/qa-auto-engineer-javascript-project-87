@@ -38,3 +38,25 @@ describe('gendiff plain (flat)', () => {
     expect(genDiff(filepath1, filepath2, 'plain')).toBe(expected);
   });
 });
+
+describe('gendiff json (flat)', () => {
+  test('json files', () => {
+    const filepath1 = getFixturePath('file1.json');
+    const filepath2 = getFixturePath('file2.json');
+    const result = genDiff(filepath1, filepath2, 'json');
+    const parsed = JSON.parse(result);
+
+    expect(Array.isArray(parsed)).toBe(true); // результат — массив
+    expect(parsed.some((item) => item.key === 'timeout')).toBe(true); // пример проверки
+  });
+
+  test('yaml files', () => {
+    const filepath1 = getFixturePath('file1.yml');
+    const filepath2 = getFixturePath('file2.yml');
+    const result = genDiff(filepath1, filepath2, 'json');
+    const parsed = JSON.parse(result);
+
+    expect(parsed.some((item) => item.type === 'added' || item.type === 'removed')).toBe(true);
+  });
+});
+

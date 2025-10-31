@@ -1,35 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1761916438475" clover="3.2.0">
-  <project timestamp="1761916438475" name="All files">
-    <metrics statements="78" coveredstatements="74" conditionals="37" coveredconditionals="28" methods="15" coveredmethods="15" elements="130" coveredelements="117" complexity="0" loc="78" ncloc="78" packages="2" files="6" classes="6"/>
+<coverage generated="1761917415776" clover="3.2.0">
+  <project timestamp="1761917415776" name="All files">
+    <metrics statements="83" coveredstatements="79" conditionals="38" coveredconditionals="29" methods="17" coveredmethods="17" elements="138" coveredelements="125" complexity="0" loc="83" ncloc="83" packages="2" files="7" classes="7"/>
     <package name="src">
-      <metrics statements="40" coveredstatements="39" conditionals="15" coveredconditionals="13" methods="8" coveredmethods="8"/>
+      <metrics statements="41" coveredstatements="40" conditionals="15" coveredconditionals="13" methods="9" coveredmethods="9"/>
       <file name="diff.js" path="/Users/nastak/qa-auto-engineer-javascript-project-87/src/diff.js">
-        <metrics statements="14" coveredstatements="14" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
+        <metrics statements="15" coveredstatements="15" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3"/>
         <line num="1" count="1" type="stmt"/>
-        <line num="2" count="4" type="stmt"/>
-        <line num="4" count="4" type="stmt"/>
-        <line num="5" count="20" type="stmt"/>
-        <line num="6" count="20" type="stmt"/>
-        <line num="8" count="20" type="cond" truecount="4" falsecount="0"/>
-        <line num="9" count="8" type="stmt"/>
-        <line num="10" count="8" type="stmt"/>
-        <line num="11" count="8" type="cond" truecount="2" falsecount="0"/>
-        <line num="12" count="4" type="stmt"/>
-        <line num="14" count="4" type="stmt"/>
-        <line num="17" count="12" type="cond" truecount="2" falsecount="0"/>
-        <line num="18" count="4" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
+        <line num="2" count="6" type="stmt"/>
+        <line num="3" count="48" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
+        <line num="6" count="30" type="stmt"/>
+        <line num="7" count="30" type="stmt"/>
+        <line num="9" count="30" type="cond" truecount="4" falsecount="0"/>
+        <line num="10" count="12" type="stmt"/>
+        <line num="11" count="12" type="stmt"/>
+        <line num="12" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="18" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="6" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
       </file>
       <file name="index.js" path="/Users/nastak/qa-auto-engineer-javascript-project-87/src/index.js">
         <metrics statements="8" coveredstatements="8" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="6" count="4" type="stmt"/>
-        <line num="7" count="4" type="stmt"/>
-        <line num="8" count="4" type="stmt"/>
-        <line num="9" count="4" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="8" count="6" type="stmt"/>
+        <line num="9" count="6" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
       </file>
       <file name="parsers.js" path="/Users/nastak/qa-auto-engineer-javascript-project-87/src/parsers.js">
@@ -38,34 +39,41 @@
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
-        <line num="7" count="8" type="cond" truecount="1" falsecount="1"/>
-        <line num="11" count="8" type="stmt"/>
-        <line num="14" count="8" type="stmt"/>
+        <line num="7" count="12" type="cond" truecount="1" falsecount="1"/>
+        <line num="11" count="12" type="stmt"/>
+        <line num="14" count="12" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
-        <line num="18" count="8" type="cond" truecount="3" falsecount="1"/>
-        <line num="20" count="4" type="stmt"/>
-        <line num="23" count="4" type="stmt"/>
+        <line num="18" count="12" type="cond" truecount="3" falsecount="1"/>
+        <line num="20" count="6" type="stmt"/>
+        <line num="23" count="6" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
         <line num="30" count="1" type="stmt"/>
-        <line num="31" count="8" type="stmt"/>
-        <line num="32" count="8" type="stmt"/>
-        <line num="33" count="8" type="stmt"/>
-        <line num="34" count="8" type="stmt"/>
+        <line num="31" count="12" type="stmt"/>
+        <line num="32" count="12" type="stmt"/>
+        <line num="33" count="12" type="stmt"/>
+        <line num="34" count="12" type="stmt"/>
         <line num="37" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.formatters">
-      <metrics statements="38" coveredstatements="35" conditionals="22" coveredconditionals="15" methods="7" coveredmethods="7"/>
+      <metrics statements="42" coveredstatements="39" conditionals="23" coveredconditionals="16" methods="8" coveredmethods="8"/>
       <file name="index.js" path="/Users/nastak/qa-auto-engineer-javascript-project-87/src/formatters/index.js">
-        <metrics statements="8" coveredstatements="7" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <metrics statements="10" coveredstatements="9" conditionals="5" coveredconditionals="3" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
-        <line num="4" count="1" type="cond" truecount="0" falsecount="1"/>
-        <line num="5" count="4" type="cond" truecount="2" falsecount="1"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="6" count="6" type="cond" truecount="3" falsecount="1"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+      </file>
+      <file name="json.js" path="/Users/nastak/qa-auto-engineer-javascript-project-87/src/formatters/json.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
       </file>
       <file name="plain.js" path="/Users/nastak/qa-auto-engineer-javascript-project-87/src/formatters/plain.js">
         <metrics statements="17" coveredstatements="16" conditionals="11" coveredconditionals="7" methods="3" coveredmethods="3"/>
