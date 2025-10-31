@@ -12,17 +12,29 @@ describe('gendiff stylish (flat)', () => {
     const filepath1 = getFixturePath('file1.json');
     const filepath2 = getFixturePath('file2.json');
     const expected = readFile('expected_flat_stylish.txt');
-
-    const result = genDiff(filepath1, filepath2);
-    expect(result).toBe(expected);
+    expect(genDiff(filepath1, filepath2)).toBe(expected);
   });
 
   test('yaml files', () => {
     const filepath1 = getFixturePath('file1.yml');
     const filepath2 = getFixturePath('file2.yml');
     const expected = readFile('expected_flat_stylish.txt');
+    expect(genDiff(filepath1, filepath2)).toBe(expected);
+  });
+});
 
-    const result = genDiff(filepath1, filepath2);
-    expect(result).toBe(expected);
+describe('gendiff plain (flat)', () => {
+  test('json files', () => {
+    const filepath1 = getFixturePath('file1.json');
+    const filepath2 = getFixturePath('file2.json');
+    const expected = readFile('expected_plain.txt');
+    expect(genDiff(filepath1, filepath2, 'plain')).toBe(expected);
+  });
+
+  test('yaml files', () => {
+    const filepath1 = getFixturePath('file1.yml');
+    const filepath2 = getFixturePath('file2.yml');
+    const expected = readFile('expected_plain.txt');
+    expect(genDiff(filepath1, filepath2, 'plain')).toBe(expected);
   });
 });

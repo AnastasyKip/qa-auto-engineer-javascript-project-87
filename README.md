@@ -16,3 +16,6 @@ gendiff __fixtures__/file1.json __fixtures__/file2.json
 ```
 ### Demo (YAML)
 https://asciinema.org/a/XPUaLUK0N7kveChudMPLkm6mS
+
+### Demo (plain)
+https://asciinema.org/a/QVGUo3fRu32htDbNVKxRXoZxp
