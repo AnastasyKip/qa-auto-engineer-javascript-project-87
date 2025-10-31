@@ -5,14 +5,15 @@
   "main": "src/index.js",
   "type": "commonjs",
   "bin": {
-    "gendiff": "./bin/gendiff.js"
+    "gendiff": "bin/gendiff.js"
   },
   "scripts": {
     "gendiff": "node bin/gendiff.js",
     "help": "node bin/gendiff.js -h",
     "test": "jest",
     "test:watch": "jest --watch",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "\"test:watch\"": "jest --watch"
   },
   "keywords": [],
   "author": "",
