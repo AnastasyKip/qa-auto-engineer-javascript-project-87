@@ -2,10 +2,10 @@ const fs = require('fs')
 const path = require('path')
 const yaml = require('js-yaml')
 
-const getAbsolutePath = (filepath) =>
+const getAbsolutePath = filepath =>
   (path.isAbsolute(filepath) ? filepath : path.resolve(process.cwd(), filepath))
 
-const getFormatByExt = (filepath) =>
+const getFormatByExt = filepath =>
   path.extname(filepath).toLowerCase().replace('.', '')
 
 const readFile = absolutePath => fs.readFileSync(absolutePath, 'utf-8')
@@ -22,7 +22,7 @@ const parse = (content, format) => {
   }
 }
 
-const loadData = (filepath) => {
+const loadData = filepath => {
   const absolutePath = getAbsolutePath(filepath)
   const format = getFormatByExt(absolutePath)
   const content = readFile(absolutePath)

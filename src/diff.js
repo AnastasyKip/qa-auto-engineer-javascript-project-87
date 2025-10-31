@@ -10,7 +10,6 @@ const buildDiff = (obj1, obj2) => {
       const val1 = obj1[key]
       const val2 = obj2[key]
       if (val1 === val2) return { key, type: 'unchanged', value: val1 }
-      // Hexlet ожидает 'changed'
       return { key, type: 'changed', oldValue: val1, newValue: val2 }
     }
 

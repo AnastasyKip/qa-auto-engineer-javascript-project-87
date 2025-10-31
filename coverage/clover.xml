@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1761922566090" clover="3.2.0">
-  <project timestamp="1761922566090" name="All files">
+<coverage generated="1761924160039" clover="3.2.0">
+  <project timestamp="1761924160039" name="All files">
     <metrics statements="84" coveredstatements="79" conditionals="38" coveredconditionals="28" methods="17" coveredmethods="16" elements="139" coveredelements="123" complexity="0" loc="84" ncloc="84" packages="2" files="7" classes="7"/>
     <package name="src">
       <metrics statements="42" coveredstatements="41" conditionals="15" coveredconditionals="13" methods="9" coveredmethods="9"/>
@@ -16,10 +16,10 @@
         <line num="10" count="8" type="stmt"/>
         <line num="11" count="8" type="stmt"/>
         <line num="12" count="8" type="cond" truecount="2" falsecount="0"/>
-        <line num="14" count="4" type="stmt"/>
-        <line num="17" count="12" type="cond" truecount="2" falsecount="0"/>
-        <line num="18" count="4" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="16" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
       </file>
       <file name="index.js" path="/Users/nastak/qa-auto-engineer-javascript-project-87/src/index.js">
         <metrics statements="9" coveredstatements="9" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
