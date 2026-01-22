@@ -29,11 +29,6 @@ jobs:
         run: npm test -- --coverage
 
       # SonarCloud
-      - name: Setup Java for Sonar
-        uses: actions/setup-java@v4
-        with:
-          distribution: 'temurin'
-          java-version: '17'
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2
