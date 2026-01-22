@@ -1,8 +1,17 @@
 #!/usr/bin/env node
 
-const { Command } = require('commander')
-const genDiff = require('../src/index.js')
-const pkg = require('../package.json')
+import { Command } from 'commander'
+import genDiff from '../src/index.js'
+import { readFileSync } from 'fs'
+import { dirname } from 'path'
+import { fileURLToPath } from 'url'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
+
+const pkg = JSON.parse(
+  readFileSync(`${__dirname}/../package.json`, 'utf-8')
+)
 
 const program = new Command()
 
@@ -17,8 +26,7 @@ program
     try {
       const result = genDiff(filepath1, filepath2, options.format)
       console.log(result)
-    }
-    catch (e) {
+    } catch (e) {
       console.error(e.message)
       process.exit(1)
     }

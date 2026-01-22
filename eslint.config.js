@@ -1,13 +1,25 @@
-module.exports = [
+import globals from 'globals'
+import eslint from '@eslint/js'
+import stylistic from '@stylistic/eslint-plugin'
+
+export default [
+  eslint.configs.recommended,
   {
-    ignores: ['node_modules/**', 'coverage/**'],
+  plugins: {
+    '@stylistic': stylistic,
   },
-  {
-    files: ['**/*.js', '**/*.cjs'],
-    languageOptions: {
-      ecmaVersion: 2022,
-      sourceType: 'commonjs',
+  languageOptions: {
+    ecmaVersion: 2024,
+    sourceType: 'module',
+    globals: {
+      ...globals.node,
+      ...globals.vitest,
     },
-    rules: {},
   },
+  rules: {
+    '@stylistic/quotes': ['error', 'single'],
+    '@stylistic/semi': ['error', 'never'],
+    '@stylistic/eol-last': ['error', 'always'],
+  },
+},
 ]

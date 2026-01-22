@@ -1,18 +1,16 @@
-const stylish = require('./stylish.js')
-const plain = require('./plain.js')
-const json = require('./json.js')
+import stylish from './stylish.js'
+import plain from './plain.js'
+import json from './json.js'
 
-const format = (nodes, name = 'stylish') => {
-  switch (name) {
+export default (diff, format) => {
+  switch (format) {
     case 'stylish':
-      return stylish(nodes)
+      return stylish(diff)
     case 'plain':
-      return plain(nodes)
+      return plain(diff)
     case 'json':
-      return json(nodes)
+      return json(diff)
     default:
-      throw new Error(`Unknown format: ${name}`)
+      throw new Error(`Unknown format: ${format}`)
   }
 }
-
-module.exports = format

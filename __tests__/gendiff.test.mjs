@@ -1,10 +1,12 @@
-const fs = require('fs')
-const path = require('path')
-const genDiff = require('../src/index.js')
+import fs from 'fs'
+import path from 'path'
+import { describe, test, expect } from 'vitest'
+import genDiff from '../src/index.js'
 
-const getFixturePath = filename =>
-  path.join(__dirname, '..', '__fixtures__', filename)
-const readFile = filename =>
+const getFixturePath = (filename) =>
+  path.join(process.cwd(), '__fixtures__', filename)
+
+const readFile = (filename) =>
   fs.readFileSync(getFixturePath(filename), 'utf-8')
 
 describe('gendiff stylish (flat)', () => {
