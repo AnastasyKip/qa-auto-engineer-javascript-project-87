@@ -15,7 +15,7 @@ const stylish = (nodes) => {
       case 'changed':
         return [
           `${indent}- ${key}: ${formatValue(node.oldValue)}`,
-          `${indent}+ ${key}: ${formatValue(node.newValue)}`,
+          `${indent}+ ${key}: ${formatValue(node.newValue)}`
         ]
       default:
         throw new Error(`Unknown node type: ${type}`)
@@ -25,4 +25,4 @@ const stylish = (nodes) => {
   return `{\n${lines.join('\n')}\n}`
 }
 
-module.exports = stylish
+export default stylish

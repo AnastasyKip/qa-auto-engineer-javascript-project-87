@@ -27,4 +27,4 @@ const plain = (nodes) => {
   return lines.join('\n')
 }
 
-module.exports = plain
+export default plain
