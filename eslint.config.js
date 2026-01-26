@@ -5,21 +5,17 @@ import stylistic from '@stylistic/eslint-plugin'
 export default [
   eslint.configs.recommended,
   {
-  plugins: {
-    '@stylistic': stylistic,
-  },
-  languageOptions: {
-    ecmaVersion: 2024,
-    sourceType: 'module',
-    globals: {
-      ...globals.node,
-      ...globals.vitest,
+    plugins: {
+      '@stylistic': stylistic,
+    },
+    languageOptions: {
+      globals: {
+        ...globals.node,
+      },
+    },
+    rules: {
+      '@stylistic/quotes': ['error', 'single'],
+      '@stylistic/semi': ['error', 'never'],
     },
   },
-  rules: {
-    '@stylistic/quotes': ['error', 'single'],
-    '@stylistic/semi': ['error', 'never'],
-    '@stylistic/eol-last': ['error', 'always'],
-  },
-},
 ]
