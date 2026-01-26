@@ -1,8 +1,8 @@
-const formatValue = (value) => (typeof value === 'string' ? value : String(value))
+const formatValue = value => (typeof value === 'string' ? value : String(value))
 
-const stylish = (nodes) => {
+const stylish = nodes => {
   const indent = '  '
-  const lines = nodes.flatMap((node) => {
+  const lines = nodes.flatMap(node => {
     const { key, type } = node
 
     switch (type) {
