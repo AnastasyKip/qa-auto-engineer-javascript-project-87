@@ -1,4 +1,4 @@
-const formatValue = (value) => (typeof value === 'string' ? value : String(value))
+const formatValue = (value) => typeof value === 'string' ? value : String(value)
 
 const stylish = (nodes) => {
   const indent = '  '
